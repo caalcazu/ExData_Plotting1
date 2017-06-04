@@ -1,4 +1,4 @@
-# Download data set Assignment 1: Exploratory Data Analysis
+, # Download data set Assignment 1: Exploratory Data Analysis
 
 if (!file.exists("data")){
         dir.create("data")
@@ -27,5 +27,5 @@ Finaldata <- cbind(DateTime, HPC_Data1)
 
 # Create and save plot 1 
 hist(Finaldata$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
-dev.copy(png, file = "plot1.png")
+dev.copy(png, file = "plot1.png", width =480, height = 480)
 dev.off()
