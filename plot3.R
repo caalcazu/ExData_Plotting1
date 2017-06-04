@@ -39,5 +39,5 @@ plot(DateTime, Finaldata$Sub_metering_3,
      col = "blue", xlab = "", ylab= "Energy sub metering")
 legend("topright", legend =c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = 1)
 
-dev.copy(png, file = "plot3.png")
+dev.copy(png, file = "plot3.png", width =480, height = 480)
 dev.off()
